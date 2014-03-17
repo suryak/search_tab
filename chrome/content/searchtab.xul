@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<overlay id="searchtab" 
+         xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+ <statusbar id="status-bar">
+
+  <statusbarpanel id="searchtab-panel">              
+        <textbox style="width: 165px; height:22px; padding: 0px 0px; margin: 0px;" id="searchtabexpression" onkeydown="searchtabsuryamanickam.searchtabcheckifenterispressed(event);" onfocus="this.select();" value="Search Tab (shift + f)"/>
+
+  </statusbarpanel>
+
+  <keyset id="mainKeyset">
+    <!-- define keyboard shortcut -->
+    <key id="key_searchtab" modifiers="shift" key="f" command="cmd_searchtab"/>
+  </keyset>
+
+  <commandset id="mainCommandSet">
+    <!-- command to execute for both menu item and keyboard shortcut -->
+    <command id="cmd_searchtab" oncommand="searchtabsuryamanickam.searchtabbringtofocus();"/>
+  </commandset>
+
+<panel id="thepanel">
+  <vbox align="start">    
+    <vbox id="list_vbox">      
+      
+    <listbox style="width: 165px; height: 22px; padding: 0px 0px; margin: 0px;" id="searchtabmenu" onkeydown="searchtabsuryamanickam.searchtabwaitforlistselection(event);" onclick="searchtabsuryamanickam.clickitem();">
+      	
+    </listbox>
+    </vbox>
+    <vbox>
+        
+    </vbox>
+      
+    </vbox>
+
+</panel>
+
+ </statusbar> 	
+
+ <script type="application/x-javascript" src="searchtab.js" />
+
+</overlay>
+
