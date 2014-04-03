@@ -1,0 +1,17 @@
+
+Search Tab is a Firefox Addon which was made for making the navigation between the tabs easy. 
+
+Written in 2009.
+It supports only Firefox 3.* .
+
+Firefox made the status bar deprecated now.
+
+
+What Search Tab does is it adds a text box to the status bar. All the tabs which are opened in the browser are indexed by the title.
+Whenever a query is typed in the search tab text box, we show a drop down listbox of those tabs that matches with the title words matching with the query text. It dynamically gets updated as the query proceeds. Then, when a click/ any item in the drop down list box is selected, we take the user to that tab.
+
+The Video will help you clearly understand the working:
+https://www.youtube.com/watch?v=cFZCQa6mJwM
+
+
+
